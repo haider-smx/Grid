@@ -1,0 +1,43 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #EFEFEF;
+  color:white;
+  font-size: 22px;;
+}
+
+#container{
+  display:grid;
+  border: 1px solid rgb(142, 13, 13);
+  grid-template-columns: 2fr 1fr ;
+  grid-template-rows: calc(53.33vh - 10px) calc(33.33vh - 10px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+#container .columna1{
+  padding: 9px;
+  background-color:#550a06;
+  border-radius: 5px;
+}
+
+#container .columna2{
+  padding: 9px;
+  background-color:#561306;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #72220c;
+}
+
+a:hover{
+  color: rgb(152, 101, 20);
+}
+a{
+  color: rgb(0, 5, 3);
+}
