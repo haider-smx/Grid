@@ -1,3 +1,4 @@
+/* Base style for mobile devices */
 *{
   margin:0;
   padding:0;
@@ -12,32 +13,135 @@ body{
 
 #container{
   display:grid;
-  border: 1px solid rgb(142, 13, 13);
   grid-template-columns: 2fr 1fr ;
   grid-template-rows: calc(53.33vh - 10px) calc(33.33vh - 10px);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  gap: 30px;
+  padding: 30px;
 }
 
 #container .columna1{
-  padding: 9px;
-  background-color:#550a06;
-  border-radius: 5px;
+  padding: 50px;
+  border-radius: 25px;
+  border: rgb(9, 3, 70) solid; 2px
+  gap: 10px;
 }
 
 #container .columna2{
-  padding: 9px;
-  background-color:#561306;
-  border-radius: 5px;
+  padding: 2%;
+  border-radius: 5%;
+  border: rgb(3, 5, 65) solid; 2px
+  gap: 10px;
 }
-
-body {
-  background-color: #72220c;
-}
-
+ 
 a:hover{
-  color: rgb(152, 101, 20);
+  color: rgb(83, 69, 127);
 }
 a{
-  color: rgb(0, 5, 3);
+  color: rgb(45, 20, 231);
+}
+#container {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+}
+#contenido, #imagen {
+  padding: 10px;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+ }
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  *{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #EFEFEF;
+  color:white;
+  font-size: 22px;;
+}
+
+#container{
+  display:grid;
+  grid-template-columns: 2fr 1fr ;
+  grid-template-rows: calc(53.33vh - 10px) calc(33.33vh - 10px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  gap: 30px;
+  padding: 30px;
+}
+
+#container .columna1{
+  padding: 50px;
+  border-radius: 25px;
+  border: rgb(9, 3, 70) solid; 2px
+  gap: 10px;
+}
+
+#container .columna2{
+  padding: 2%;
+  border-radius: 5%;
+  border: rgb(3, 5, 65) solid; 2px
+  gap: 10px;
+}
+ 
+a:hover{
+  color: rgb(83, 69, 127);
+}
+a{
+  color: rgb(45, 20, 231);
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+  *{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #EFEFEF;
+  color:white;
+  font-size: 22px;;
+}
+
+#container{
+  display:grid;
+  grid-template-columns: 2fr 1fr ;
+  grid-template-rows: calc(53.33vh - 10px) calc(33.33vh - 10px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  gap: 30px;
+  padding: 30px;
+}
+
+#container .columna1{
+  padding: 50px;
+  border-radius: 25px;
+  border: rgb(9, 3, 70) solid; 2px
+  gap: 10px;
+}
+
+#container .columna2{
+  padding: 2%;
+  border-radius: 5%;
+  border: rgb(3, 5, 65) solid; 2px
+  gap: 10px;
+}
+ 
+a:hover{
+  color: rgb(83, 69, 127);
+}
+a{
+  color: rgb(45, 20, 231);
+}
 }
